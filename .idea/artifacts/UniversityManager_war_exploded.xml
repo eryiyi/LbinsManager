@@ -4,6 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
+          <element id="module-output" name="LbinsManager" />
           <element id="module-output" name="UniversityManager" />
         </element>
         <element id="directory" name="lib">
@@ -77,6 +78,7 @@
           <element id="library" level="project" name="Maven: com.qiniu:happy-dns:0.2.5" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="LbinsManager/web/Web" />
       <element id="javaee-facet-resources" facet="UniversityManager/web/Web" />
     </root>
   </artifact>

@@ -67,7 +67,9 @@ public class ViewpagerService implements ListService, SaveService, DeleteService
                     //无需添加查询条件
                 }
             }else {//手机端请求
-                schoolIds = new int[]{Integer.parseInt(query.getSchoolId())};
+                if(!StringUtil.isNullOrEmpty(query.getSchoolId())){
+                    schoolIds = new int[]{Integer.parseInt(query.getSchoolId())};
+                }
             }
             if (schoolIds != null) {
                 map.put("schoolIds", schoolIds);
