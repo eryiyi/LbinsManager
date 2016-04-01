@@ -5,6 +5,7 @@ package com.liangxunwang.unimanager.query;
  */
 public class AdvertQuery {
     private int index;
+
     private int size;
 
     public int getIndex() {
