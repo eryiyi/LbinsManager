@@ -87,7 +87,9 @@ public class MemberRegisterService implements SaveService, ExecuteService {
         Boolean suc=ChatUtils.register(member.getHxUsername(),member.getEmpPass());
         if(suc) {
             College college=collegeDao.getGroupId(member.getSchoolId());
-            GroupUtils.addGroup(college.getGroupId(), member.getDateline() + member.getEmpMobile());
+            if(college != null){
+                GroupUtils.addGroup(college.getGroupId(), member.getDateline() + member.getEmpMobile());
+            }
         }else {
             throw new ServiceException(Constants.HX_ERROR);
         }

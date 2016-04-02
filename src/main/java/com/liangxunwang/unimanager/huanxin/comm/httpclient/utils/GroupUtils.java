@@ -8,7 +8,6 @@ import com.liangxunwang.unimanager.huanxin.comm.HxConstants;
 import java.net.URL;
 
 /**
- * Created by 刘先强 on 2015/2/26.
  */
 public class GroupUtils {
 //    private static Logger LOGGER = LoggerFactory.getLogger(ChatUtils.class);

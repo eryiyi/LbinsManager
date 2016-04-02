@@ -5,7 +5,6 @@ package com.liangxunwang.unimanager.util;
  */
 public class Constants {
 //        public static final String URL = "http://120.27.41.21:8070/";
-
         public static final String URL = "http://192.168.0.224:8080/";
 
         public static final String QINIU_URL = "http://7xlyf1.com2.z0.glb.qiniucdn.com/";
